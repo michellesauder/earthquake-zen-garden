@@ -2,7 +2,6 @@ import React from 'react';
 import '../App.scss';
 
 const Profile = ({ profile }) => {
-    console.log(profile, 'profile')
     return (
         <div className="App">
               <h1>Profile</h1>

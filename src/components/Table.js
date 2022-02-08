@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import Details from '../components/Details';
 
 const Table = ({ features }) => {
     return (
@@ -12,8 +13,8 @@ const Table = ({ features }) => {
             </tr>
             {features.map((feature)=>{
                 return (
-                        <tr key={feature.id}>
-                            <td><Link to="/details" >{feature.properties.place}</Link></td>
+                        <tr>
+                            <td><Link to="/details" element={<Details feature={feature}/>} >{feature.properties.place}</Link></td>
                             <td>{feature.properties.mag}</td>
                             <td>{feature.properties.time}</td>
                         </tr>)

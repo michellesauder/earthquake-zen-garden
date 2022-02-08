@@ -1,6 +1,7 @@
 import React from 'react'
 
-const Details = () => {
+const Details = (props) => {
+
     return (
         <div> 
             Details tab
