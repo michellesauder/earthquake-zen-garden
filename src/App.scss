@@ -1,10 +1,21 @@
 .App{
+    h1 {
+        display: flex;
+        justify-content:center;
+    }
     .container{
         display: flex;
         justify-content:center;
         flex-direction: column;
-        table th {
-            text-align: left;
+        img {
+            width: 150px;
+            object-fit: contain;
+        }
+        table {
+            max-width: 50%;
+            th {
+                text-align: left;
+            }
         }
     }
     
