@@ -1,0 +1,28 @@
+.App{
+    h1 {
+        display: flex;
+        justify-content:center;
+    }
+    .container{
+        display: flex;
+        justify-content:center;
+        flex-direction: column;
+        img {
+            width: 150px;
+            object-fit: contain;
+        }
+        table {
+            max-width: 50%;
+            th {
+                text-align: left;
+            }
+        }
+    }
+    
+    .header{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        background-color:#ededed;
+    }
+}
