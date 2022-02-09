@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.scss';
-import { data } from './data';
-import Table from '../src/components/Table/Table';
+import { data } from '../data';
+import Table from '../components/Table/Table';
 
 const App = () => {
     return (
