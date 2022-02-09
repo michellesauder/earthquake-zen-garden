@@ -14,9 +14,7 @@ const App = ({}) => {
     <>
     <div className="App">
         <div className="container">
-            <h1>
-                USGS All Earthquakes, Past Hour
-            </h1>
+            <h1>USGS All Earthquakes, Past Hour</h1>
             <Table features={earthquakeData}/>
         </div>
     </div>
