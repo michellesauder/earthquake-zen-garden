@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
-import { data } from '../data';
-import '../App.scss';
+import { data } from '../../data';
+import '../../App.scss';
 
 const Table = () => {
     const [sortedField, setSortedField] = useState()

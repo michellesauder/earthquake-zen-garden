@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from "./App";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Profile from './components/Profile';
-import Details from './components/Details';
-import Header from './components/Header';
+import Profile from './components/Profile/Profile';
+import Details from './components/Details/Details';
+import Header from './components/Header/Header';
 import { data } from './data';
 
 const rootElement = document.getElementById("root");

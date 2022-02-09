@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from "react-router-dom";
-import { data } from '../data';
-import '../App.scss';
+import { data } from '../../data';
+import '../../App.scss';
 
 const Details = () => {
   const { id } = useParams()

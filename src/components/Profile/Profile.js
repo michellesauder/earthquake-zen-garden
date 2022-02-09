@@ -1,6 +1,6 @@
 import React from 'react';
-import '../App.scss';
-import { data } from '../data';
+import '../../App.scss';
+import { data } from '../../data';
 
 const Profile = () => {
 
