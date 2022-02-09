@@ -20,7 +20,7 @@ const route = (
         <Routes>
             <Route path="/" element={<App features={data.data.features}/>} />
             <Route path="profile" element={<Profile profile={data.profile}/>} />
-            <Route path="/details"  element={<Details />} />
+            <Route path="/details/:id"  element={<Details />} />
         </Routes>
     </Router>
 )

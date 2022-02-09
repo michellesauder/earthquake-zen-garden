@@ -14,7 +14,7 @@ const Table = ({ features }) => {
             {features.map((feature)=>{
                 return (
                         <tr>
-                            <td><Link to="/details" element={<Details feature={feature}/>} >{feature.properties.place}</Link></td>
+                            <td><Link to={`/details/${feature.id}`} >{feature.properties.place}</Link></td>
                             <td>{feature.properties.mag}</td>
                             <td>{feature.properties.time}</td>
                         </tr>)
