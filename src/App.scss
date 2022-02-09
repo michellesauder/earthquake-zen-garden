@@ -1,4 +1,6 @@
 .App{
+    // display: flex;
+    // justify-content:center;
     h1 {
         display: flex;
         justify-content:center;
@@ -7,18 +9,33 @@
         display: flex;
         justify-content:center;
         flex-direction: column;
+        margin: auto;
         img {
             width: 150px;
             object-fit: contain;
         }
         table {
-            max-width: 50%;
+            display: block;
+            width: 50%;
+            margin: 0 auto;
             th {
                 text-align: left;
+                cursor: pointer;
+                display: block;
             }
+            tbody {
+                display: block;
+            }
+            tr {
+                display: flex;
+                justify-content: space-between;
+                td {
+                    text-align: center;
+                }
+            }
+
         }
     }
-    
     .header{
         display: flex;
         width: 100%;
