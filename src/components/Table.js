@@ -8,19 +8,24 @@ const Table = () => {
     const [sortAscending, setSortAscending] = useState()
     const [sortedData, setSortedData] = useState(data.data.features)
 
+    var dateOptions = { year: 'numeric', month: 'short', day: 'numeric' };
+    var timeOptions = { hour: '2-digit', minute: '2-digit' };
+
+
     if (sortedField === undefined) {
       sortField("place")
     }
 
     const tableData = sortedData.map((feature) => {
+      let date = new Date(feature.properties.time);
       return (
         <tr key={feature.id}>
-          <td data-label="Title" className="primary">
+          <td data-label="Title" className="title">
             <Link to={`/details/${feature.id}`}>
               {feature.properties.place}</Link>
           </td>
-          <td data-label="Magnitude">{feature.properties.mag}</td>
-          <td data-label="Time">{new Date(feature.properties.time).toUTCString()}</td>
+          <td data-label="Magnitude" >{feature.properties.mag}</td>
+          <td data-label="Time">{date.toLocaleDateString("en-US", dateOptions)}, {date.toLocaleTimeString("en-US", timeOptions)}</td>
         </tr>
       )
     });
@@ -51,20 +56,16 @@ const Table = () => {
       }
     return (
         <>
-        <div className="App">
             <table className="container" >
-                <th>
-                    <tr>
-                      <th onClick={() => sortField('place')} className={sortIndicator('place')}>Title</th>
-                      <th onClick={() => sortField('mag')} className={sortIndicator('mag')}>Magnitude</th>
-                      <th onClick={() => sortField('time')} className={sortIndicator('time')}>Time</th>
-                    </tr>
-                </th>
-            <tbody>
-                {tableData}
-            </tbody>
+                  <tr>
+                    <th onClick={() => sortField('place')} className={sortIndicator('place')}>Title</th>
+                    <th onClick={() => sortField('mag')} className={sortIndicator('mag')}>Magnitude</th>
+                    <th onClick={() => sortField('time')} className={sortIndicator('time')}>Time</th>
+                  </tr>
+              <tbody>
+                  {tableData}
+              </tbody>
             </table>
-        </div>
         </>
     )
 }

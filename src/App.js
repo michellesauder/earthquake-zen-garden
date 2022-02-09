@@ -3,19 +3,13 @@ import './App.scss';
 import { data } from './data';
 import Table from '../src/components/Table';
 
-const App = ({}) => {
-    const [earthquakeData, setEarthquakeData] = useState([]);
-
-    useEffect(() => {
-        setEarthquakeData(data.data.features)
-    }, []);
-
+const App = () => {
     return (
     <>
     <div className="App">
         <div className="container">
-            <h1>USGS All Earthquakes, Past Hour</h1>
-            <Table features={earthquakeData}/>
+            <h2>USGS All Earthquakes, Past Hour</h2>
+            <Table />
         </div>
     </div>
     </>

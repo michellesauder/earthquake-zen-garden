@@ -1,45 +1,157 @@
-.App{
-    // display: flex;
-    // justify-content:center;
-    h1 {
+:root {
+    --pallette-light: #ededed;
+    --pallette-dark: #777777;
+    --pallette-darker: #444444;
+    --pallette-darkest: #000000;
+    --pallette-theme: #0011bb;
+    --pallette-theme-secondary: #6600cc;
+  }
+  body {
+    font-family: sans-serif;
+    margin: 0;
+  }
+
+.App {
+    // Header CSS
+    header {
         display: flex;
-        justify-content:center;
-    }
-    .container{
-        display: flex;
-        justify-content:center;
-        flex-direction: column;
-        margin: auto;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--pallette-light);
+        padding: 1rem;
         img {
-            width: 150px;
+            width: 100px;
+            object-fit: contain;
+            height: auto;
+        }
+        h1 {
+            color: var(--pallette-dark);
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        a {
+            font-weight: bold;
+            font-size: 1rem;
+        }
+    }
+
+
+    .container {
+        margin: auto;
+        max-width: 45rem;
+        .details-container {
+            width: 36rem;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            h3 {
+                display: flex;
+                justify-content: left;
+                font-size: 1.5rem;
+                color: var(--pallette-darker);
+            }
+        }
+        .avatar {
+            width: 200px;
+            padding-right: 20px;
+        }
+        .row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 36rem;
+            margin: auto;
+            .profile {
+                width: 20rem;
+                height: 1.5rem;
+                display: flex;
+                .title {
+                    width: 30%;
+                }
+                .value {
+                    width: 70%;
+                }
+            }
+            .col {
+                display: flex;
+                flex-direction: column;
+                flex: 0
+            }
+            .col-2 {
+                display: flex;
+                flex-direction: column;
+                flex-basis: 100%;
+                flex: 2
+            }
+            .title {
+                font-weight: bold;
+                width: 50%;
+            }
+            .value {
+                color: var(--pallette-dark);
+                font-weight: bold;
+                width: 50%;
+            }
+        }
+        h2 {
+            display: flex;
+            justify-content: center;
+            font-size: 2rem;
+            color: var(--pallette-darker);
+        }
+
+        img {
+            width: 100px;
+            height: auto;
             object-fit: contain;
         }
+          
+        .column {
+            display: flex;
+            flex-direction: column;
+            flex: 0
+        }
+
         table {
-            display: block;
-            width: 50%;
-            margin: 0 auto;
-            th {
-                text-align: left;
-                cursor: pointer;
-                display: block;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            tr {
+                margin: 0 auto;
+                width: 31rem;
+                th {
+                    color: var(--pallette-darkest);
+                    cursor: pointer;
+                    text-align: center;
+                    height: 1rem;
+                    min-width: 11rem;
+                    font-weight: 400;
+                    padding: 0.5rem;
+                }
+            }
+            tr th::after {
+                font-size: 0.6rem;
+                padding-right: 0.5rem;
             }
             tbody {
                 display: block;
-            }
-            tr {
-                display: flex;
-                justify-content: space-between;
-                td {
-                    text-align: center;
+                margin: 0 auto;
+                .title {
+                    text-align: left !important;
                 }
+                tr td {
+                    text-align: center;
+                    min-width: 9rem;
+                    font-weight: 400;
+                    a {
+                        font-weight: bold;
+                    }
+                }
+
             }
 
         }
-    }
-    .header{
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        background-color:#ededed;
     }
 }
