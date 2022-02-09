@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './App.scss';
-import { data } from '../data';
 import Table from '../components/Table/Table';
 
 const App = () => {
