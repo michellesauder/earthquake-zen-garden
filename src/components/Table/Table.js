@@ -40,7 +40,7 @@ const Table = () => {
         <>
             <table className="container" >
                   <tr>
-                    <th onClick={() => sortField('place')} className={sortIndicator('place')}>Title</th>
+                    <th onClick={() => sortField('place') } className={sortIndicator('place')}>Title</th>
                     <th onClick={() => sortField('mag')} className={sortIndicator('mag')}>Magnitude</th>
                     <th onClick={() => sortField('time')} className={sortIndicator('time')}>Time</th>
                   </tr>
