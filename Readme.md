@@ -14,8 +14,8 @@ try running the following command.
 
 ```sh
 $ npm -v && node -v
-6.4.1
-v8.16.0
+6.14.14
+v14.17.4
 ```
 
 ## Getting Started
