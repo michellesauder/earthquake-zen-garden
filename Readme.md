@@ -43,6 +43,8 @@ $ npm install
 
 ### Serving the app
 
+localhost: 8080
+
 ```sh
 $ npm run dev
 ```
