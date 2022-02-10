@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { data } from '../../data';
 import '../../App/App.scss';
 import TableData from './TableData';
+import data from '../../data.json';
+
 
 const Table = () => {
     const [sortedField, setSortedField] = useState();

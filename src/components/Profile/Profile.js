@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../App/App.scss';
 import ProfileDetails from './ProfileDetails';
-import { data } from '../../data';
+import data from '../../data.json';
 
 const Profile = () => {
 
