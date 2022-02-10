@@ -16,7 +16,8 @@ const TableData = ({ tableData }) => {
                             </td>
                                 <td data-label="Magnitude" >{feature.properties.mag}</td>
                                 <td data-label="Time">{date.toLocaleDateString("en-US", dateOptions)}, {date.toLocaleTimeString("en-US", timeOptions)}</td>
-                        </tr>)
+                        </tr>
+                        )
                     })
             }
     </>)
