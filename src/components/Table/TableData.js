@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const TableData = ({ tableData }) => {
+
     var dateOptions = { year: 'numeric', month: 'short', day: 'numeric' };
     var timeOptions = { hour: '2-digit', minute: '2-digit' };
 
