@@ -9,7 +9,8 @@ module.exports = {
       publicPath: '/',
    },
    devServer: {
-      historyApiFallback: true
+      historyApiFallback: true,
+      open: true
    },
    module: {
       rules: [
