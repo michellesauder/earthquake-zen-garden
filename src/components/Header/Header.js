@@ -7,7 +7,7 @@ const Header = ({logo, title, firstName}) => {
         <header >
             <Link to={"/"}><img src={logo}/></Link>
             <h1 className="title">{title}</h1>
-            <Link to={"/profile"}><a>Welcome {firstName}</a></Link>
+            <Link to={"/profile"}>Welcome {firstName}</Link>
         </header>
     )
 }

@@ -5,8 +5,7 @@ const TableData = ({ tableData }) => {
     var dateOptions = { year: 'numeric', month: 'short', day: 'numeric' };
     var timeOptions = { hour: '2-digit', minute: '2-digit' };
 
-    return (
-        <div>
+    return (<>
             {tableData.map((feature) => {
                 let date = new Date(feature.properties.time);
                     return (
@@ -20,8 +19,7 @@ const TableData = ({ tableData }) => {
                         </tr>)
                     })
             }
-        </div>
-    )
+    </>)
 }
 
 export default TableData
