@@ -37,7 +37,7 @@ To install and set up the library, run:
 
 ```sh
 $ npm install
-``
+```
 
 ## Usage
 
@@ -46,3 +46,4 @@ $ npm install
 ```sh
 $ npm run dev
 ```
+
